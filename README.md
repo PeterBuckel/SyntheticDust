@@ -1,6 +1,6 @@
 # Synthetic Dust Generator
 
-This repository provides the code related to our paper: "" which was accepted at XXX. The code generates artificial dust-like particles that are heterogeneously distributed. Additionally, our method simulates the temporal flow of dust generated during tillage. Starting with a dust-free image, progressing to a dense dust appearance.
+The code generates artificial dust-like particles that are heterogeneously distributed. Additionally, our method simulates the temporal flow of dust generated during tillage. Starting with a dust-free image, progressing to a dense dust appearance.
 
 Further information is available at: https://agriscapes-dataset.com/
 
