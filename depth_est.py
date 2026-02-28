@@ -27,17 +27,14 @@ def gen_dust(clean_img, depth_img, perlin_noise, mask, beta, A):
     mask = mask/255
     
     ### depth image normalization and apply mask
-    #depth_img = 255 - depth_img
     depth_img = depth_img/255
-    #depth_img = normalize(depth_img)
-    
+
     ### Apply perlin noise
     dst_3c = np.zeros([1860,2880,3], dtype=np.float64)
     
     ### combine depth image and perlin noise
     dst = depth_img + perlin_noise
     cv2.imwrite("output/test_dst.png", dst*255)
-    #dst = perlin_noise
     dst = dst * mask
     cv2.imwrite("output/test_mask.png", dst*255)
     dst_3c[:,:,0] = dst
